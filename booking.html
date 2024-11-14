@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketics - Booking</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Book Ticket</h1>
+        <nav><ul>
+            <li><a href="shows.html">Back</a></li>
+            <li><a href="home.html">Home</a></li>
+        </nav></ul>
+    </header>
+    <main>
+        <h2>Booking Form</h2>
+        <form id="booking-form" action="confirmation.html" method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="movie">Movie:</label>
+            <input type="text" id="movie" name="movie" required>
+
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+
+            <button class="submit">
+                <a href="confirmation.html">Book Now</a></button>
+        </form>
+    </main>
+    
+    

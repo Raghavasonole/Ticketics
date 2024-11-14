@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <script class="script"> 
+        // Get URL parameters to display confirmation details
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('confirm-name').textContent = urlParams.get('name');
+        document.getElementById('confirm-email').textContent = urlParams.get('email');
+        document.getElementById('confirm-movie').textContent = urlParams.get('movie');
+        document.getElementById('confirm-tickets').textContent = urlParams.get('tickets');
+    </script>
+</body>
+</html>
